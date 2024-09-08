@@ -7,7 +7,7 @@ const getUserChanDetails = async () => {
     let obj = { list: [] };
 
     try {
-        const responseHmac = await fetch("https://clearkeys.vercel.app/hmac.json");
+        const responseHmac = await fetch("https://clearkeys.vercel.app/tataplay/hmac.json");
         const data = await responseHmac.json();
         hmacValue = data.data.hmac.hdntl.value;
     } catch (error) {
